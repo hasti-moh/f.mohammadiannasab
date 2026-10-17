@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="htmlTag">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فاطمه محمدیان نسب | مهندس تضمین کیفیت و تست خودکار نرم‌افزار</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- آیکون‌های متریال و فونت وزیرمتن -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- نوبار ناوبری شیشه‌ای مدرن -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-accent">&lt;QA /&gt;</span> فاطمه محمدیان
+      </div>
+      <nav class="nav-links">
+        <a href="#about" id="navAbout">درباره من</a>
+        <a href="#automation" id="navAuto">تست خودکار</a>
+        <a href="#experience" id="navExp">سوابق کاری</a>
+        <a href="#skills" id="navSkills">مهارت‌ها</a>
+        <a href="#contact" id="navContact">ارتباط</a>
+      </nav>
+      <button class="lang-pill" onclick="toggleLanguage()" id="langBtn">EN | English</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- بخش معرفی اصلی (Hero Section) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="badge" id="heroBadge">🎯 Software QA Automation Engineer</div>
+          <h1 id="heroTitle">فاطمه محمدیان نسب</h1>
+          <h2 id="heroRole">کارشناس ارشد ریاضیات کاربردی و متخصص تضمین کیفیت نرم‌افزار</h2>
+          <p id="heroBio" class="hero-desc">
+            ترکیب «دقت تحلیلی ریاضیات» با «مهندسی کیفیت نرم‌افزار». متمرکز بر تضمین پایداری سیستم از طریق پیاده‌سازی آزمون‌های خودکار End-to-End با <strong>Playwright</strong> و <strong>Selenium</strong>، اعتبارسنجی سرویس‌های API و بهینه‌سازی چرخه‌های انتشار سریع چابک.
+          </p>
+          <div class="hero-actions">
+            <a href="resume.pdf" download class="btn-primary" id="btnResume">
+              <i class="fa-solid fa-file-arrow-down"></i> دریافت فایل رسمی رزومه (PDF)
+            </a>
+            <a href="#automation" class="btn-secondary" id="btnExplore">مشاهده فریم‌ورک‌های تست</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <!-- نام عکستون profile.webp یا profile.jpg -->
+          <img src="profile.jpg.jpg" alt="فاطمه محمدیان نسب" class="avatar-img" onerror="this.src='IMG_20260403_002222.webp'" />
+        
+      </div>
+    </section>
+
+    <!-- نوار آمار و توانمندی‌ها -->
+    <section class="metrics-bar">
+      <div class="metric-item">
+        <div class="metric-num">+2 </div>
+        <div class="metric-label" id="mYears">سال تجربه در QA و سیستم‌ها</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-num">E2E</div>
+        <div class="metric-label" id="mAuto">    تست های دستی و خودکار </div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-num">BPMN</div>
+        <div class="metric-label" id="mBpmn">تحلیل عمیق نیازمندی و فرآیند</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-num">M.Sc</div>
+        <div class="metric-label" id="mEdu">ارشد ریاضی کاربردی (خواجه نصیر)</div>
+      </div>
+    </section>
+
+    <!-- بخش تخصصی تست خودکار (Automation Showcase) -->
+    <section class="section" id="automation">
+      <div class="section-header">
+        <span class="section-tag">Test Automation Engineering</span>
+        <h3 id="autoSectionTitle">فریم‌ورک‌ها و استراتژی آزمون خودکار</h3>
+        <p id="autoSectionDesc">رویکرد من به تست، جایگزینی کارهای تکراری انسانی با اسکریپت‌های قابل اتکا و سریع است.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- کارت پلی رایت -->
+        <div class="card card-tech">
+          <div class="card-icon playwright-icon">
+            <i class="fa-solid fa-masks-theater"></i>
+          </div>
+          <h4>Playwright Test Automation</h4>
+          <p id="playwrightDesc">
+            طراحی تست‌های خودکار مدرن، چندمرورگره (Chromium, Firefox, WebKit) و موازی با <strong>Playwright</strong>؛ بهره‌گیری از ویژگی‌های Auto-waiting، رهگیری درخواست‌های شبکه، تست سناریوهای پیچیده UI و اجرای سریع رگرسیون با حداقل Flaky Tests.
+          </p>
+          <ul class="card-points">
+            <li>Cross-Browser & Parallel Execution</li>
+            <li>Network Mocking & API Interception</li>
+            <li>Trace Viewer & Robust Reporting</li>
+          </ul>
+        </div>
+
+        <!-- کارت سلنیوم -->
+        <div class="card card-tech">
+          <div class="card-icon selenium-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h4>Selenium WebDriver Frameworks</h4>
+          <p id="seleniumDesc">
+            پیاده‌سازی معماری تمیز با الگوی <strong>Page Object Model (POM)</strong> در سلنیوم، پیاده‌سازی تست‌های داده‌محور (Data-Driven Testing) برای صحه‌گذاری فرآیندهای مالی و بیمه‌ای، و یکپارچه‌سازی با تست سناریوهای End-to-End.
+          </p>
+          <ul class="card-points">
+            <li>Page Object Model (POM) Design</li>
+            <li>Dynamic Element Handling & Waits</li>
+            <li>Cross-Platform Functional Coverage</li>
+          </ul>
+        </div>
+
+        <!-- تست ای‌پی‌آی و کیفیت کلی -->
+        <div class="card card-tech">
+          <div class="card-icon api-icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h4>API & Integration Testing</h4>
+          <p id="apiDesc">
+            تست لایه زیرین نرم‌افزار قبل از UI با <strong>Postman</strong>؛ طراحی کالکشن‌های تست، اعتبارسنجی Schema، تست پارامتریک مقادیر مرزی و اعتبارسنجی یکپارچگی کدهای پاسخ و توکن‌های احراز هویت.
+          </p>
+          <ul class="card-points">
+            <li>Pre/Post Request Scripts</li>
+            <li>Boundary & Edge Case Validation</li>
+            <li>Status Codes & Contract Testing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش سوابق شغلی  -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h3 id="expSectionTitle">سوابق شغلی   </h3>
+      </div>
+
+      <div class="timeline">
+        <!-- سابقه خبره -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="job-company">فناوران اطلاعات خبره</span>
+              <span class="job-period">تیر ۱۴۰۴ — اکنون</span>
+            </div>
+            <h4 class="job-position" id="job1Title">کارشناس تست و ارزیابی کیفیت نرم‌افزار (QA)</h4>
+            <p class="job-summary" id="job1Desc">
+              تمرکز بر طراحی سناریوهای جامع تست دستی و آغاز توسعه فریم‌ورک‌های خودکار. اجرای آزمون‌های رگرسیون بر روی سیستم‌های پیچیده سازمانی، صحه‌گذاری و تست API با Postman، مدیریت عیوب و باگ‌های چرخه حیات نرم‌افزار در Jira، و ترسیم فرایندهای سیستمی مطابق BPMN.
+            </p>
+            <div class="tags-container">
+              <span>Playwright</span>
+              <span>Selenium</span>
+              <span>Postman</span>
+              <span>Jira</span>
+              <span>BPMN</span>
+              <span>Regression</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- سابقه ناریجه -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="job-company">   کترینگ ناریجه</span>
+              <span class="job-period">اسفند ۱۴۰۴ — اردیبهشت ۱۴۰۵</span>
+            </div>
+            <h4 class="job-position" id="job2Title">کارشناس سیستم‌ها و تحلیل برنامه‌ریزی</h4>
+            <p class="job-summary" id="job2Desc">
+              تحلیل ساختار شکست محصول (BOM)، انطباق محاسبات مصرف مواد و کنترل مغایرت‌ها با سیستم‌های پایگاه داده. مستندسازی روش‌های اجرایی سازمان با ابزارهای Visio و Visual Paradigm و بهبود گردش کارهای بین‌واحدی.
+            </p>
+            <div class="tags-container">
+              <span>BOM Analysis</span>
+              <span>Visual Paradigm</span>
+              <span>Advanced Excel</span>
+              <span>Process Flow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- سابقه تضمین کیفیت نرم‌افزار -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="job-company">توسعه نرم‌افزار (شیراز)</span>
+              <span class="job-period">فروردین ۱۴۰۳ — اسفند ۱۴۰۳</span>
+            </div>
+            <h4 class="job-position" id="job3Title">کارشناس تست و آزمون پذیرش نرم‌افزار</h4>
+            <p class="job-summary" id="job3Desc">
+              اجرای آزمون‌های عملکردی و پذیرش کاربر (UAT)، ثبت و ریشه‌یابی خطاهای کاربری، و تهیه گزارش‌های سنجش کیفیت محصول قبل از تحویل به مشتری نهایی.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش مهارت‌ها و تحصیلات -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h3 id="skillSectionTitle">مهارت‌های فنی و شایستگی‌ها</h3>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h5><i class="fa-solid fa-check-double"></i> تست و اتومیشن</h5>
+          <div class="skill-chips">
+            <span class="chip">Playwright</span>
+            <span class="chip">Selenium WebDriver</span>
+            <span class="chip">Postman / API Testing</span>
+            <span class="chip">Test Case & Plan Design</span>
+            <span class="chip">Regression & Sanity</span>
+            <span class="chip">Page Object Model</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h5><i class="fa-solid fa-diagram-project"></i> متدولوژی و تحلیل سیستم</h5>
+          <div class="skill-chips">
+            <span class="chip">BPMN 2.0</span>
+            <span class="chip">Visual Paradigm</span>
+            <span class="chip">Jira & Scrum Framework</span>
+            <span class="chip">BOM (ساختار محصول)</span>
+            <span class="chip">UAT & Requirement Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h5><i class="fa-solid fa-square-root-variable"></i> تحصیلات و تفکر تحلیلی</h5>
+          <div class="edu-card">
+            <strong>کارشناسی ارشد ریاضیات کاربردی</strong>
+            <p>دانشگاه صنعتی خواجه نصیرالدین طوسی (۱۴۰۲ - ۱۴۰۴)</p>
+          </div>
+          <div class="edu-card">
+            <strong>کارشناسی ریاضیات کاربردی</strong>
+            <p>دانشگاه فسا (۱۳۹۸ - ۱۴۰۲)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- فوتر ارتباطی -->
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <h3 id="contactTitle">مشتاق همکاری در حوزه های مرتبط هستم</h3>
+        <p id="contactDesc">برای مصاحبه، همکاری پروژه‌ای یا بررسی کیفیت محصولات، با من در تماس باشید.</p>
+        <div class="contact-links">
+          <a href="mailto:f.mohammadiannasab@outlook.com" class="contact-btn">
+            <i class="fa-solid fa-envelope"></i> ارسال ایمیل
+          </a>
+          <a href="resume.pdf" download class="contact-btn secondary">
+            <i class="fa-solid fa-file-pdf"></i> دانلود رزومه (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© ۲۰۲۶ طراحی و توسعه پورتفولیو شخصی فاطمه محمدیان نسب</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
